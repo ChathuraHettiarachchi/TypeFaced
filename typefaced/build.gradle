@@ -1,5 +1,29 @@
 apply plugin: 'com.android.library'
 
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'TypeFaced'
+
+    publishedGroupId = 'com.chootdev'
+    libraryName = 'TypeFaced'
+    artifact = 'typefaced'
+
+    libraryDescription ='This library allows developer to create textView, button, edittextView and etc, with custom type face.'
+
+    siteUrl = 'https://github.com/ChathuraHettiarachchi/TypeFaced'
+    gitUrl = 'https://github.com/ChathuraHettiarachchi/TypeFaced.git'
+
+    libraryVersion = '1.1.7'
+
+    developerId = 'ChathuraHettiarachchi'
+    developerName = 'Chathura Hettiarachchi'
+    developerEmail = 'chathura93@yahoo.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
@@ -29,3 +53,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.1.0'
     testCompile 'junit:junit:4.12'
 }
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
