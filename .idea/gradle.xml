@@ -9,9 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/mobile" />
-            <option value="$PROJECT_DIR$/tv" />
             <option value="$PROJECT_DIR$/typefaced" />
-            <option value="$PROJECT_DIR$/wear" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

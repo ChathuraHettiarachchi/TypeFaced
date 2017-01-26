@@ -1,10 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="TypeFacedTextView">
-        <attr name="fontName" format="string" />
+        <attr name="textView_font" format="string" />
     </declare-styleable>
 
-    <declare-styleable name="CustomButton">
-        <attr name="btnFontName" format="string" />
+    <declare-styleable name="TypeFacedEditText">
+        <attr name="editText_font" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="TypeFacedButton">
+        <attr name="button_font" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="TypeFacedRadioButton">
+        <attr name="radiobutton_font" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="TypeFacedCheckbox">
+        <attr name="checkbox_font" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="TypeFacedToggleButton">
+        <attr name="togglebutton_font" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="TypeFacedSwitch">
+        <attr name="switch_font" format="string" />
     </declare-styleable>
 </resources>
