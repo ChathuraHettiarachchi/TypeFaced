@@ -154,7 +154,7 @@ Changelog
 Chathura Hettiarachchi, chathura93@yahoo.com
 
 # License
-Copyright 2016 Chathura Hettiarachchi
+Copyright 2017 Chathura Hettiarachchi
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
