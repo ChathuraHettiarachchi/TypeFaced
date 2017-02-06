@@ -153,6 +153,8 @@ Changelog
 
 Chathura Hettiarachchi, chathura93@yahoo.com
 
+Checkout my other contributions, https://github.com/ChathuraHettiarachchi?tab=repositories
+
 # License
 Copyright 2017 Chathura Hettiarachchi
 
