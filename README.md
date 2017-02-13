@@ -1,9 +1,9 @@
 # TypeFaced[ ![Download](https://api.bintray.com/packages/chathurahettiarachchi/maven/TypeFaced/images/download.svg) ](https://bintray.com/chathurahettiarachchi/maven/TypeFaced/_latestVersion)
-This library allows developer to create textView, button, editTextView and etc with custom type-face.
+TypeFaced is a library which allow developers to easily create widely used Android UI controls such as TextView, Button, EditTextView, etc with custom typefaces (<a href="https://en.wikipedia.org/wiki/Typeface">Link to definition of typeface</a>). Without TypeFaced, developer has to bind any non-default font programmatically to his/her application rather than configuring it in layout.xml. 
 
 ![libintro](https://cloud.githubusercontent.com/assets/13764097/22328954/f6fa03be-e3e4-11e6-86c7-000da62f8042.jpg)
 
-TypeFaced, contains many types of customized views as follow,
+With <b>TypeFaced</b>, you could customize following UI controls in your Android application
 * TypeFacedTextView
 * TypeFacedEditText
 * TypeFacedButton
@@ -12,9 +12,9 @@ TypeFaced, contains many types of customized views as follow,
 * TypeFacedToggleButton
 * TypeFacedSwitch
 
-####Let's take a look how to add this to your project
+####How to configure TypeFaced in your project
 
-For the android project just include the following dependency inside you build.gradle's depedency list.
+In your Android project, just include the following dependency to build.gradle's dependency list.
 
 Gradle
 ------
@@ -30,6 +30,7 @@ dependencies {
 ```
 
 if you using maven use following
+
 Maven
 ------
 ```
@@ -41,11 +42,22 @@ Maven
 </dependency>
 ```
 
-After setup installing lib to your project you just need only to call it using just few lines of code. It will return you a string with the results.
+Assets
+------
+
+Font files you are planning to use should be added to project's assets folder as shown below. 
+
+![screen shot 2017-01-26 at 4 57 20 pm](https://cloud.githubusercontent.com/assets/13764097/22329713/9827ab4e-e3e8-11e6-89ea-7999dd084bf3.png)
+
+Under your assets folder, create a new folder called "fonts", and place all your font (ttf) files inside that.
+
+
+After configuring the TypeFaced library in your project, it is ready to use in your layout.xml and controls will have the configured typeface.
+
 
 Usage
 -----
-To add custom TextView with TypeFaced, You can use TypeFacedTextView
+TextView (TypeFacedTextView)
 ```xml
 <com.chootdev.typefaced.TypeFacedTextView
         android:layout_width="wrap_content"
@@ -54,7 +66,7 @@ To add custom TextView with TypeFaced, You can use TypeFacedTextView
         app:textView_font="YOUR_FONT_NAME.ttf/>
 ```
 
-To add custom Button with TypeFaced, You can use TypeFacedButton
+Button (TypeFacedButton)
 ```xml
 <com.chootdev.typefaced.TypeFacedButton
         android:layout_width="wrap_content"
@@ -62,7 +74,7 @@ To add custom Button with TypeFaced, You can use TypeFacedButton
         app:button_font="YOUR_FONT_NAME.ttf"/>
 ```
 
-or to add custom EditText with TypeFaced, You can use TypeFacedEditText
+EditText (TypeFacedEditText)
 ```xml
 <com.chootdev.typefaced.TypeFacedEditText
         android:layout_width="wrap_content"
@@ -70,7 +82,7 @@ or to add custom EditText with TypeFaced, You can use TypeFacedEditText
         app:button_font="YOUR_FONT_NAME.ttf"/>
 ```
 
-or to add custom RadioButton with TypeFaced, You can use TypeFacedRadioButton
+RadioButton (TypeFacedRadioButton)
 ```xml
 <com.chootdev.typefaced.TypeFacedRadioButton
         android:layout_width="wrap_content"
@@ -78,7 +90,7 @@ or to add custom RadioButton with TypeFaced, You can use TypeFacedRadioButton
         app:button_font="YOUR_FONT_NAME.ttf"/>
 ```
 
-or to add custom CheckBox with TypeFaced, You can use TypeFacedCheckbox
+CheckBox (TypeFacedCheckbox)
 ```xml
 <com.chootdev.typefaced.TypeFacedCheckbox
         android:layout_width="wrap_content"
@@ -86,7 +98,7 @@ or to add custom CheckBox with TypeFaced, You can use TypeFacedCheckbox
         app:button_font="YOUR_FONT_NAME.ttf"/>
 ```
 
-or to add custom ToggleButton with TypeFaced, You can use TypeFacedToggleButton
+ToggleButton (TypeFacedToggleButton)
 ```xml
 <com.chootdev.typefaced.TypeFacedToggleButton
         android:layout_width="wrap_content"
@@ -94,7 +106,7 @@ or to add custom ToggleButton with TypeFaced, You can use TypeFacedToggleButton
         app:button_font="YOUR_FONT_NAME.ttf"/>
 ```
 
-or to add custom Switch with TypeFaced, You can use TypeFacedSwitch
+Switch (TypeFacedSwitch)
 ```xml
 <com.chootdev.typefaced.TypeFacedSwitch
         android:layout_width="wrap_content"
@@ -102,13 +114,10 @@ or to add custom Switch with TypeFaced, You can use TypeFacedSwitch
         app:button_font="YOUR_FONT_NAME.ttf"/>
 ```
 
-You need only to enter font name with the extension .ttf to each custom view.
+As you have noticed above, it is matter of specify the font name with the font tile extension .ttf to each custom view. TypeFaced has tested for .otf, .eot font file types as well.
 
 NOTE
 -----
-Your fonts need to be added to your project's assets folder. Inside of your assetc need to add new folder with name "fonts", and place all your font .ttf files inside of it.
-
-![screen shot 2017-01-26 at 4 57 20 pm](https://cloud.githubusercontent.com/assets/13764097/22329713/9827ab4e-e3e8-11e6-89ea-7999dd084bf3.png)
 
 TypeFaced also contains some pre-added fonts with the library,
 ```java
